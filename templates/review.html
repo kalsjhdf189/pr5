@@ -1,0 +1,174 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>first</title>
+    <link href="{% static 'css/uikit.min.css' %}" rel="stylesheet">
+    <script src="{% static 'js/uikit.min.js' %}"></script>
+    <script src="{% static 'js/uikit-icons.min.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+<header>
+    <nav class="uk-navbar-container">
+        <div class="uk-container">
+            <div uk-navbar class="uk-navbar uk-navbar-item">
+                <div class="uk-navbar-left">
+                    <h2 class="uk-margin-small">Цветочник</h2>
+                </div>
+                <div class="uk-navbar-center uk-width-large">
+                    <a class="uk-navbar-item uk-logo">
+                        <img src="{% static 'images/Logo.png' %}" width="250">
+                    </a>
+                </div>
+                <div class="uk-navbar-right">
+                    <ul class="uk-navbar-nav">
+                        <li>
+                            <a href="#" class aria-expanded="false">О компании</a>
+                            <div class="uk-navbar-dropdown uk-navbar-dropdown-bottom-left" style="left: 156.609px; top: 80px;">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="review">Отзовы</a></li>
+                                    <li class="uk-active"><a href="#">news</a></li>
+                                    <li class="uk-active"><a href="#">Гарантия качества</a></li>
+                                    <li class="uk-active"><a href="#">Доставка</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                        <li>
+                            <a class="uk-navbar-toggle uk-navbar-toggle-animate" uk-navbar-toggle-icon href="#"></a>
+                            <div class="uk-navbar-dropdown">
+                                <ul class="uk-nav uk-navbar-dropdown-nav">
+                                    <li class="uk-active"><a href="#">Вход</a></li>
+                                    <li class="uk-active"><a href="#">Регистрация</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<h1 class="uk-heading-primary uk-text-center">Наш ассортимент</h1>
+<div class="uk-container">
+    <div class="uk-grid uk-grid-small uk-child-width-1-3@m uk-margin-medium-top uk-grid-match" data-uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > .uk-card; delay: 200" data-uk-grid="">
+        <div class="uk-first-column">
+            <div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column uk-scrollspy-inview" data-uk-scrollspy-class="uk-animation-slide-left-small">
+                <div class="uk-card-header uk-text-center">
+                    <h4 class="uk-text-bold">Тульпан</h4>
+                </div>
+                <div class="uk-card-body uk-flex-1">
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <img src="{% static 'images/20.png' %}" width="250">
+                    </div>
+                    <div class="uk-text-center">
+                        <h1>От 100₽</h1>
+                    </div>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-button uk-button-primary uk-width-1-1">КУПИТЬ</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-card-hover uk-flex uk-flex-column uk-scrollspy-inview">
+                <div class="uk-card-header uk-text-center">
+                    <h4 class="uk-text-bold">Роза</h4>
+                </div>
+                <div class="uk-card-body uk-flex-1">
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <img src="{% static 'images/4.png' %}" width="250">
+                    </div>
+                    <div class="uk-text-center">
+                        <h1>От 322₽</h1>
+                    </div>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-button uk-button-primary uk-width-1-1">КУПИТЬ</a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="uk-card uk-card-default uk-flex uk-card-hover uk-flex-column uk-scrollspy-inview" data-uk-scrollspy-class="uk-animation-slide-right-small" style="">
+                <div class="uk-card-header uk-text-center">
+                    <h4 class="uk-text-bold">Сирень</h4>
+                </div>
+                <div class="uk-card-body uk-flex-1">
+                    <div class="uk-flex uk-flex-middle uk-flex-center">
+                        <img src="{% static 'images/3.png' %}" width="250">
+                    </div>
+                    <div class="uk-text-center">
+                        <h1>От 123₽</h1>
+                    </div>
+                </div>
+                <div class="uk-card-footer">
+                    <a href="#" class="uk-button uk-button-primary uk-width-1-1">КУПИТЬ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="uk-divider-icon uk-margin-medium">
+</div>
+
+<div class="uk-container">
+    <div uk-navbar class="uk-navbar uk-navbar-item">
+        <div class="uk-child-width-1-2@s uk-grid-match" uk-grid>
+            <div>
+                <div class="uk-card uk-card-hover uk-card-body">
+                    <div class="uk-text-left">
+                        Международный магазин цветов с доставкой Цветочник был основан в 1999 году. Сегодня наша сеть объединяет более 700 цветочных салонов в России и тысячи салонов в странах ближнего и дальнего зарубежья. За время работы нашими клиентами стали более полутора миллионов человек из 150 стран мира.
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="uk-card uk-card-hover uk-card-body">
+                    <div class="uk-text-right">
+                        Мы доставляем цветы во все уголки земного шара, так, например, в 2008 году смогли отправить несколько букетов на Северный Полюс. Для того чтобы выполнить ваш заказ на самом высоком уровне, мы создали международную сеть доставки цветов, в которую входят только лучшие цветочные салоны, прошедшие строжайший отбор перед тем, как представлять наши интересы.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="uk-container uk-container-center">
+        <div class="uk-grid uk-grid-large">
+            <div class="uk-width-medium-1-3">
+                <h3>Cвязаться</h3>
+                <ul>
+                    <li class="uk-icon-phone">8-800-555-35-35</li>
+                    <li class="uk-icon-map">Ул.Пушкина д.Колотушкина</li>
+                    <li class="uk-icon-envelope">cvet19@khpk.ru</li>
+                </ul>
+            </div>
+            <div class="uk-width-medium-1-3">
+                <h3>Дополнительные ресурсы</h3>
+                <div class="uk-grid">
+                    <div class="uk-width-2-5">
+                        <ul>
+                            <li href="#">Главная</li>
+                            <li href="#">Каталог</li>
+                            <li href="#">Новости</li>
+                            <li href="#">Контакты</li>
+                        </ul>
+                    </div>
+                    <div class="uk-width-3-5">
+                        <ul>
+                            <li href="#">Часто задаваемые вопросы</li>
+                            <li href="#">политика конфиденциальности</li>
+                            <li href="#">Условия и положения</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="copy uk-text-center">© 2024 ООО "Цветочник". Все права защищены.</div>
+</body>
+</html>
